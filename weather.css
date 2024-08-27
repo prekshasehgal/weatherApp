@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(135deg, #1246f0, #f3f3f3);
+    min-height: 100vh;
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Removes any default margin around the body */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+
+
+#date{
+    margin-top: 20px;
+    font-size: 26px;;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #14addb, #f3f3f3);
+    margin: 100px auto 0;  /*100px from top auto from left and right , 0 from bottom*/
+    border-radius: 30px;  /*to make the corners round*/
+    padding: 40px 35px;  /*some space around the text and sections inside the div*/ 
+    text-align: center;
+    opacity: 0.85;
+}
+
+
+.search{
+    width: 100%;
+    display: flex;  /*to divide the space equally between the contents in the section*/
+    align-items: center;  /*all the items/sections should align center*/
+    justify-content: space-between; /* the items /sections should be equally aligned from the center of the div or we can say that the items will be aligned horizontolly side by side*/
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px; /*10px from top and bottom 25px from left and right*/
+    height: 60px;
+    border-radius: 30px;
+    flex: 1; /* by this it will acquire all the space pending after the other item that is search image*/
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+
+}
+
+
+
+
+
+.weather-icon{
+    width: 170px; 
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    
+}
+
+
+
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+    }
+
+.humidity,  .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+
+.weather{
+    display: none;
+}
+
+
+.error{
+    font-size: 28px;
+    display: none;
+}
+
+.error p:nth-child(1){
+    color: rgb(255, 0, 0);
+    margin-top: 20px;
+}
+
+
+.error p:nth-child(2){
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
+.search{
+    gap: 20px;
+}
+    
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 10px 10px 10px; /*10px from top and bottom 25px from left and right*/
+        height: 60px;
+        border-radius: 30px;
+        
+        margin-right: 1px;
+        font-size: 18px;
+    }
+    
+    .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+    
+    .search button img {
+        width: 20px;
+    
+    }
+
+
+}
